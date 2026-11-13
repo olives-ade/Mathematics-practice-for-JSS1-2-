@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" content="Learn JSS1 and JSS2 mathematics with clear lessons, worked examples and practice questions.">
+  <title>Maths Made Easy | JSS1 &amp; JSS2</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Course navigation">
+      <a class="brand" href="#" aria-label="Maths Made Easy home">
+        <span class="brand-icon" aria-hidden="true">∑</span>
+        <span><strong>maths made</strong><strong class="brand-accent">easy</strong></span>
+      </a>
+      <p class="sidebar-label">YOUR CLASS</p>
+      <div class="class-switch" role="group" aria-label="Choose your class">
+        <button class="class-button active" data-class="JSS1" aria-pressed="true">JSS1</button>
+        <button class="class-button" data-class="JSS2" aria-pressed="false">JSS2</button>
+      </div>
+      <div class="course-progress">
+        <div class="progress-label"><span>Course progress</span><strong id="progress-count">0 / 0</strong></div>
+        <div class="progress-track" role="progressbar" aria-label="Course progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <span id="progress-bar"></span>
+        </div>
+      </div>
+      <p class="sidebar-label topic-label">TOPICS <span id="topic-count"></span></p>
+      <nav id="topic-nav" class="topic-nav" aria-label="Mathematics topics"></nav>
+      <div class="sidebar-note">
+        <span aria-hidden="true">✦</span>
+        <p>Small steps make<br><strong>big discoveries.</strong></p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Mathematics</span><span aria-hidden="true">/</span><strong id="breadcrumb-class">JSS1</strong></div>
+        <div class="topbar-right"><span class="learning-pill"><span class="status-dot"></span> Your learning space</span></div>
+      </header>
+
+      <section class="welcome" aria-labelledby="welcome-title">
+        <div class="welcome-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR MATHEMATICS JOURNEY</p>
+          <h1 id="welcome-title">Make sense of<br> <span>maths, one step at a time.</span></h1>
+          <p class="welcome-description">Understand the idea. Follow a worked example. Then try one yourself.</p>
+          <div class="welcome-meta"><span class="meta-icon" aria-hidden="true">▦</span><span id="course-meta">JSS1 · Nigerian junior secondary topics</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+          <div class="hero-card"><span class="hero-scribble">x + 5 = 12</span><span class="hero-rule"></span><span class="hero-answer">x = 7</span></div>
+          <span class="float-symbol symbol-plus">+</span><span class="float-symbol symbol-root">√</span><span class="float-symbol symbol-pi">π</span>
+          <span class="hero-star star-a">✳</span><span class="hero-star star-b">✦</span>
+        </div>
+      </section>
+
+      <section class="lesson-area" aria-labelledby="lesson-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> THE CLASSROOM</p><h2 id="lesson-heading">Your topics</h2></div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="topic-search" type="search" placeholder="Find a topic..." aria-label="Search topics"><kbd>/</kbd></label>
+        </div>
+        <div class="lesson-layout">
+          <section class="topic-panel" aria-label="Topic list">
+            <div class="panel-top"><span id="panel-title">JSS1 lessons</span><span class="panel-count" id="panel-count"></span></div>
+            <div id="topic-list" class="topic-list"></div>
+            <p id="empty-state" class="empty-state" hidden>No topics match your search. Try another word.</p>
+          </section>
+          <article id="lesson-content" class="lesson-content" aria-live="polite"></article>
+        </div>
+      </section>
+      <footer class="footer"><span>Keep going — every question is a chance to learn.</span><span>Made for curious minds <span class="footer-heart">♥</span></span></footer>
+    </main>
+  </div>
+</body>
+</html>
